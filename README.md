@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
 
+          
+# Generador de Perfiles Falsos
+
+## Descripción
+
+Este proyecto es una aplicación web que permite a los usuarios crear perfiles falsos con correos electrónicos temporales verificados para proteger su privacidad en línea. La aplicación genera direcciones de correo electrónico temporales que pueden ser utilizadas para registrarse en sitios web sin comprometer la información personal del usuario.
+
+## Características
+
+- ✉️ Creación de correos electrónicos temporales
+- 👤 Generación de perfiles de usuario aleatorios
+- 📨 Recepción y visualización de mensajes en tiempo real
+- 🔒 Protección de privacidad en línea
+- 🗑️ Eliminación de mensajes y cuentas cuando ya no son necesarios
+- 📱 Diseño responsivo para dispositivos móviles y de escritorio
+
+## Tecnologías Utilizadas
+
+- [Next.js](https://nextjs.org/) - Framework de React para aplicaciones web
+- [TypeScript](https://www.typescriptlang.org/) - Superset tipado de JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS para diseño rápido
+- [API REST](https://email-faker-backend.onrender.com/api) - Backend para la gestión de correos temporales
+
+## Requisitos Previos
+
+- Node.js 18.x o superior
+- npm, yarn o pnpm
+
+## Instalación
+
+1. Clona este repositorio:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tu-usuario/fake-profile-generator.git
+cd fake-profile-generator
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias:
+```bash
+npm install
+# o
+yarn install
+# o
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+# o
+yarn dev
+# o
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-## Learn More
+## Uso
 
-To learn more about Next.js, take a look at the following resources:
+1. Al acceder a la aplicación, se generará automáticamente un correo electrónico temporal.
+2. Utiliza este correo para registrarte en sitios web o servicios.
+3. Los mensajes recibidos aparecerán en la bandeja de entrada de la aplicación.
+4. Puedes ver, eliminar o gestionar los mensajes recibidos.
+5. Cuando ya no necesites la cuenta, puedes eliminarla completamente.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estructura del Proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+fake-profile-generator/
+├── app/                  # Código principal de la aplicación
+│   ├── components/       # Componentes reutilizables
+│   ├── lib/              # Utilidades y funciones auxiliares
+│   ├── services/         # Servicios para interactuar con la API
+│   ├── types/            # Definiciones de tipos TypeScript
+│   ├── layout.tsx        # Diseño principal de la aplicación
+│   └── page.tsx          # Página principal
+├── public/               # Archivos estáticos
+└── ...                   # Archivos de configuración
+```
 
-## Deploy on Vercel
+## Contribución
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Las contribuciones son bienvenidas. Para contribuir:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Haz un fork del repositorio
+2. Crea una rama para tu característica (`git checkout -b feature/amazing-feature`)
+3. Haz commit de tus cambios (`git commit -m 'Añadir una característica increíble'`)
+4. Haz push a la rama (`git push origin feature/amazing-feature`)
+5. Abre un Pull Request
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+
+## Contacto
+
+Si tienes preguntas o sugerencias, no dudes en abrir un issue en este repositorio.
+
+---
+
+Desarrollado con ❤️ para proteger tu privacidad en línea.
+
+        
