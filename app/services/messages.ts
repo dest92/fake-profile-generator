@@ -35,10 +35,15 @@ interface ApiResponse {
   };
 }
 
-export async function getMessages(token: string, page: number = 1): Promise<ApiResponse> {
-  const response = await fetch(`http://localhost:3000/api/messages?token=${token}&page=${page}`);
+export async function getMessages(
+  token: string,
+  page: number = 1
+): Promise<ApiResponse> {
+  const response = await fetch(
+    `https://email-faker-backend.onrender.com/api/messages?token=${token}&page=${page}`
+  );
   if (!response.ok) {
-    throw new Error('Error al obtener los mensajes');
+    throw new Error("Error al obtener los mensajes");
   }
   return response.json();
 }
@@ -46,16 +51,16 @@ export async function getMessages(token: string, page: number = 1): Promise<ApiR
 export async function getMessage(id: string, token: string): Promise<Message> {
   const response = await fetch(`/api/messages/${id}?token=${token}`);
   if (!response.ok) {
-    throw new Error('Error al obtener el mensaje');
+    throw new Error("Error al obtener el mensaje");
   }
   return response.json();
 }
 
 export async function deleteMessage(id: string, token: string): Promise<void> {
   const response = await fetch(`/api/messages/${id}?token=${token}`, {
-    method: 'DELETE'
+    method: "DELETE",
   });
   if (!response.ok) {
-    throw new Error('Error al eliminar el mensaje');
+    throw new Error("Error al eliminar el mensaje");
   }
 }

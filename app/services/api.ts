@@ -6,7 +6,7 @@ import {
   AccountInfo,
 } from "@/app/types";
 
-const API_BASE_URL = "http://localhost:3000/api";
+const API_BASE_URL = "https://email-faker-backend.onrender.com/api";
 
 // Crear un email temporal
 export async function createTemporaryEmail(): Promise<EmailResponse> {
